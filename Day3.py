@@ -70,3 +70,16 @@ elif size == "L":
     print(f"Please Pay $ {bill}")
 else:
     print("Opt Correct Options.")
+
+#Logical Operators - and/or/not
+age = int(input("Enter age:"))
+if age == 18 or age >= 18:
+    print("Adult")
+elif age == 17 and age == 18:
+    print("Going to be Adult.")
+
+a = int(input("Enter a number:"))
+result = not a == 18      #returns true if a is not 18.
+print(result)
+
+#Project -3 (Treasure Island)

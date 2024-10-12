@@ -16,4 +16,5 @@ The goal of this challenge is to master Python by consistently coding for 100 da
 ## Keep Coding! 💻🚀
 "Programming isn't about what you know; it's about what you can figure out."
 — Chris Pine
+
 #100DaysOfCode#Python

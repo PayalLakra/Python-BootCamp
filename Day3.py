@@ -83,3 +83,50 @@ result = not a == 18      #returns true if a is not 18.
 print(result)
 
 #Project -3 (Treasure Island)
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/________/
+*******************************************************************************
+''')
+print("Welcome to Tresure Island.Your mission is to find the treasure.")
+print("You're at the crossroad. Now, Where do you want to go?")
+step1 = input("Type'Left'or 'Right'\n").lower()
+if step1 == "left":
+    print("You've come to a lake.There is an Island in the middle of the lake.")
+    step2 = input("Type 'Wait' to wait for a boat or 'Swim' to swim across.\n").lower()
+    if step2 == "wait":
+        print("Which door you want to take?")
+        step3 = input("Red, Yellow, Blue\n").lower()
+        if step3 == "red":
+            print("Burned by fire.\nGAME OVER")
+        elif step3 == "yellow":
+            print("HURRRRAAAAAYYYYYY!!\nYOU WIN")
+        elif step3 == "blue":
+            print("Eaten by beasts.\nGAME OVER")
+        else:
+            print("GAME OVER")
+    elif step2 == "swim":
+        print("Attacked by trout.\nGAME OVER")
+    else:
+        print("Attacked by trout.\nGAME OVER")
+elif step1 == "right":
+    print("You fall into a hole...\n GAME OVER") 
+else:
+    print("You fall into a hole...\n GAME OVER")       

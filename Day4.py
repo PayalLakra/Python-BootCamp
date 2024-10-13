@@ -66,4 +66,51 @@ print(dirty_dozen[1][3])    # second one takes the index pf that particular list
 print(dirty_dozen[0][2])
 print(dirty_dozen[1][1])
 
-# ROCK PAPER SCISSORS
+#ROCK PAPER SCISSORS
+Rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+Paper = '''
+     _______
+---'    ____)____
+           ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+Scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+game_images = [Rock,Paper,Scissors]
+user_choice = int(input("What do you want to choose? Type 0 for rock , 1 for paper or 2 for scissors.\n"))
+print("You Choose\n")
+print(game_images[user_choice])
+computer_choice = random.randint(0,2)
+print(f"Computer choice is {computer_choice}")
+print(game_images[computer_choice])
+
+#0 is rock, 1 is paper, and 2 is scissors
+if user_choice >=3:
+    print("You typed a wrong number.Try Again")
+elif user_choice == 0 & computer_choice == 2:
+    print("You Wins...")
+elif user_choice == 2 & computer_choice == 0:
+    print("You Lose...")
+elif user_choice == computer_choice :
+    print("It's a Draw...")
+elif computer_choice > user_choice:
+    print("You Lose")
+elif user_choice > computer_choice:
+    print("You Win...")

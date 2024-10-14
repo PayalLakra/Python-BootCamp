@@ -2,7 +2,7 @@
 Topics to be covered:
 - Functions
 - While loops
--
+- Reeborg's World challenge Hurdles
 '''
 
 #Functions - is a block of code which only runs when it is called.
@@ -17,7 +17,6 @@ def function():      #declaring the function
     print(income)
 function()           #calling the function 
 
-#Reeborg's World challenge
 
 #While loop
 age = 15

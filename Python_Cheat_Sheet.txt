@@ -82,6 +82,4 @@ my_Number + 2
 
 #Syntax Error-Syntax errors happen when your code does not make any sense to the computer.This can happen because you've misspelt something or there's too many brackets or a missing comma.
 print(12 + 4))
-print(12 + 4))
-^
 SyntaxError: unmatched ')'

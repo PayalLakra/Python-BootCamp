@@ -1,8 +1,7 @@
 '''
 Topics to be covered:
-- Cipher Program
+- Caeser Cipher Program
 - Functions with input,parameters and arguments
-- 
 '''
 
 #Function with inputs
@@ -43,3 +42,27 @@ def calculate_love_score(name1, name2):
     print(love_score)
 
 calculate_love_score("Anil", "Babita")
+
+#CAESER CIPHER
+import string
+
+alphabet = list(string.ascii_lowercase)
+direction = input("Type 'encode' to encrypt and 'decode' to decrypt:\n").lower()
+original_text = input("Enter your Message:").lower()
+shift_amount = int(input("Enter the shift number:"))
+
+def coding(original_text, shift_amount, direction):
+    cipher_text = ""
+    for letter in original_text:
+        if letter in alphabet:
+            if direction == 'encode':
+                shifted_position = alphabet.index(letter) + shift_amount
+            else:
+                shifted_position = alphabet.index(letter) - shift_amount  
+            shifted_position %= len(alphabet)
+            cipher_text += alphabet[shifted_position]
+        else:
+            cipher_text += letter
+    print(f"This is the result:{cipher_text}")
+
+coding(original_text=original_text, shift_amount=shift_amount, direction=direction)

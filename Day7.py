@@ -5,33 +5,101 @@ Topics to be covered:
 
 import random
 
-words = ['payal','nikki','shaksham','vinni','tannu']
+HANGMANPICS = ['''
+  +---+
+  |   |
+      |
+      |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+      |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+  |   |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|   |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ /    |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ / \  |
+      |
+=========''']
 
+words = ['payal', 'nikki', 'shaksham', 'vinni', 'tannu']
+lives = 6
 choose = random.choice(words)
-print(choose)
+print(choose)  # for testing purposes, you may want to remove this line
 
-word_length = len(choose)
-placeholder = ""
-for i in range(word_length):
-    placeholder += "_ "
-print(placeholder)
+# Initialize display with underscores for each letter in the chosen word
+display = ["_"] * len(choose)
+print(" ".join(display))
 
 game_over = False
 correct_letter = []
-display = ""
+
 while not game_over:
-    guess = input("Enter a letter:").lower()
+    print(f"\n********** {lives} lives left **********")
+    guess = input("Enter a letter: ").lower()
 
-    for letter in choose:
-        if letter == guess:
-            display += letter
-            correct_letter.append(guess)
-        elif letter in correct_letter:
-            display += letter
-        else:
-            display += "_ "
-    print(display)
+    if len(guess) != 1 or not guess.isalpha():
+        print("Please enter a single letter.")
+        continue
 
-    if "_" not in guess:
+    if guess in correct_letter:
+        print(f"You have already guessed the letter '{guess}'")
+        continue
+
+    correct_letter.append(guess)
+
+    # Update display if the guess is correct
+    if guess in choose:
+        for index, letter in enumerate(choose):
+            if letter == guess:
+                display[index] = letter
+    else:
+        # Reduce lives for incorrect guesses
+        lives -= 1
+        print(f"You guessed '{guess}', that's not in the word. You lose a life.")
+        print(HANGMANPICS[6 - lives])  # Print the hangman picture for the current lives
+
+        if lives == 0:
+            game_over = True
+            print("********** You Lose **********")
+
+    print(" ".join(display))
+
+    # Check if the player has guessed all letters
+    if "_" not in display:
         game_over = True
-        print("You Win")
+        print("********** You Win **********")

@@ -69,7 +69,7 @@ print(travel_log["Germany"]["cities_visited"][1])
 
 #AUCTION PROGRAM
 print('''
-___________
+                         ___________
                          \         /
                           )_______(
                           |"""""""|_.-._,.---------.,_.-._
@@ -82,6 +82,30 @@ ___________
                        .-------------.
 ''')
 print("WELCOME TO THE SECRET AUCTION PROGRAM")
-name = input("What is your name?:").lower()
-age = int(input("What's your bid?: $"))
-permit = input("Are there any other bidders? Type 'yes' or 'no'.\n")
+
+# def comparison(bidding):
+    # winner = ""
+    # highest = 0
+    # for bidder in bidding:
+    #     bid_amount = bidding[bidder]
+    #     if bid_amount > highest:
+    #         highest = bid_amount
+    #         winner = bidder
+    
+    # print(f"The Winner is{winner} with a bid of ${highest}")
+
+bid = {}
+continue_bidding = True
+
+while continue_bidding:
+    name = input("What is your name?:").lower()
+    amount = int(input("What's your bid?: $"))
+    bid[name] = amount
+    permit = input("Are there any other bidders? Type 'yes' or 'no'.\n").lower()
+    if permit == 'no':
+        continue_bidding = False
+        winner = max(bid, key=bid.get)
+        winning_amount = bid[winner]     # This gets the winning amount
+        print(f"The winner is {winner} with a bid of ${winning_amount}.")
+    elif permit == 'yes':
+        print("\n"*100)

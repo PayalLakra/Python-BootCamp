@@ -1,6 +1,6 @@
 from turtle import Turtle, Screen
-from snake import Snake
-import time
+from paddle import Paddle
+from ball import Ball
 
 screen = Screen()
 screen.setup(width=600, height=600)
@@ -8,7 +8,7 @@ screen.bgcolor("white")
 screen.title("My Snake Game")
 screen.tracer(0)
 
-snake = Snake()
+r_paddle = Paddle((350,0))
 
 snake.listen()
 screen.onkey(snake.up, "Up")

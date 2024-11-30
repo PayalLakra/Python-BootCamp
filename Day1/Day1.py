@@ -4,7 +4,7 @@
 - CONCATENATION
 - ERRORS: Identation, Syntax, Name, 
 - INPUT() FUNCTION
-- COMMENTS: "#" - FOr Sinle Line , "''''''" - for multiple line
+- COMMENTS: "#" - FOr Single Line , "''''''" - for multiple line
 - VARIABLES
 - LENGTH - len() function
 '''

@@ -102,4 +102,4 @@ while not game_over:
     # Check if the player has guessed all letters
     if "_" not in display:
         game_over = True
-        print("********** You Win **********")
+        print("********** YOU WIN **********")

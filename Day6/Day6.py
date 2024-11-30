@@ -9,6 +9,7 @@ Topics to be covered:
 #Types - Inbulit and user defined
 #Built-in functions = len,sum,range,int,print,input
 
+
 #user-defined function
 def function():      #declaring the function
     sal = 15000

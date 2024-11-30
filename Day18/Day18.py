@@ -1,9 +1,9 @@
-# # # '''
-# # # Topics to be Covered:
-# # # - Turtle Graphics documentation
-# # # - Tuples
-# # # - Importing Modules
-# # # '''
+'''
+Topics to be Covered:
+- Turtle Graphics documentation
+- Tuples
+- Importing Modules
+'''
 
 # # # from turtle import Turtle, Screen
 

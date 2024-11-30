@@ -1,10 +1,12 @@
 '''Topics to be covered:
 - File System
 - Relative and Absolute File path
+- Mail Merge Project
 '''
 
 # Read & Write in File
 # file = open("my_file.txt")    # needs to close the file manually
+
 # Or we can use
 with open("my_file.txt") as file:  # no need to close the file manually
     contents = file.read()

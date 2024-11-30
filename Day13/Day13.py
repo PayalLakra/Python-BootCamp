@@ -1,7 +1,6 @@
 '''
 Topics to be Covered:
 -Debugging
--
 '''
 
 # Debugging: The process of removing bug from the code.

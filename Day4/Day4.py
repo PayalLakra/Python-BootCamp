@@ -102,6 +102,7 @@ print(f"Computer choice is {computer_choice}")
 print(game_images[computer_choice])
 
 #0 is rock, 1 is paper, and 2 is scissors
+
 if user_choice >=3:
     print("You typed a wrong number.Try Again")
 elif user_choice == 0 & computer_choice == 2:

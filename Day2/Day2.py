@@ -56,6 +56,7 @@ print(marks)
 print(f"The marks are: {marks}")  
 
 #PROJECT 2 -- TIP CALCULATOR
+
 print("Welcome to the Tip Calculator!")
 bill = int(input("What's the total bill? $"))
 tip = int(input("How much do you like to give? 10,20 or 30? "))

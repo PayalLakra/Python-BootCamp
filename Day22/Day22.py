@@ -1,7 +1,6 @@
 '''Topics to be covered:
 - Pong- The Famous Archade Game
 '''
-# It is in the Folder named as PongGame
 
 ## Steps to do:
 # -> Create the screen
@@ -12,3 +11,5 @@
 # -> Detect collision with paddle
 # -> Detect when paddle misses
 # -> Keep Score
+
+# It is in the Folder named as PongGame

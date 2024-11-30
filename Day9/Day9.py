@@ -11,7 +11,7 @@ print(dict1[0])
 #print(dict[1])    #get key error as 1 is not in the dict1
 
 dict1[1] = "tannu"   #add this value at the end of dict1
-dict1[2] = "vinny"    #update the value
+dict1[2] = "viny"    #update the value
 print(dict1)
 
 empty_dict = {}    #way to create empty dictionary then we can add values

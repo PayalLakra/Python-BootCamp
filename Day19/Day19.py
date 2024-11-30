@@ -57,9 +57,9 @@ Topics to be covered:
 # screen.onkey(clear, "c")
 # screen.exitonclick()
 
-# # Object State and Instances
-# tammy.color = green
-# tim.colour = blue  # so these are 2 diff. states of objects from same class
+# Object State and Instances
+tammy.color = green
+tim.colour = blue  # so these are 2 diff. states of objects from same class
 
 # Turtle Race
 from turtle import Turtle, Screen

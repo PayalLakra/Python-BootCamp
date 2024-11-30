@@ -5,7 +5,7 @@ Topics to be Covered:
 - Adding methods to class
 - pass keyword
 - Constructor
-- Quiz Game
+- Quiz Brain Game
 '''
 
 # Class Creat

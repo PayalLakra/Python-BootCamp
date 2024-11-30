@@ -21,4 +21,4 @@ file.close()
 # Relative and Absolute File path
 # Absolute Path always starts off relative to the root. It basically starts from root of computer storage system. It is always relative to the root of your computer.
 # Relative file path is simply just ./name.ppt. The ./ signifies look in the current folder for this file. It Now the relative file path is relative to your current working directory.
-# in Windows, the path is separated by a (\) slash.
+# In Windows, the path is separated by a (\) slash.

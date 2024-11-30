@@ -27,6 +27,7 @@ def is_leap_year(year):
 #The return keyword will exit function & prevent rest of the code from being executed.  
 print(is_leap_year(2024))
 
+
 # CALCULATOR PROJECT
 
 def add(num1, num2):

@@ -3,8 +3,6 @@ Topics to be Covered:
 - For loops
 - Inbuilt functions - sum,max,range
 - Password Generator
--
--
 '''
 #Loops - to repeat a process untill a certain condiiton is not met.
 #Loops - allows us to execute multiple times the same code.

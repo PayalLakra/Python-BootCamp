@@ -16,6 +16,7 @@ def scope():
 print(name)   # Global Scope
 scope()       # Local Scope
 
+
 # Prime Number Checker
 
 num = int(input("Enter any number:"))

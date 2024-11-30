@@ -29,6 +29,7 @@ my_screen.canvwidth
 # my_screen.clear()          # my_screen is object and after dot clear is a method
 my_screen.exitonclick()
 
+
 #Packages - prettytable -> dispalys tabular data in ASCII format
 
 from prettytable import PrettyTable

@@ -2,7 +2,6 @@
 Topics to be covered:
 - Inheritance
 - Slice list and Dictionary
-- Snake Game
 '''
 
 # Class Inheritance : By using this the child class get all the access from the parent class

@@ -17,3 +17,6 @@
 # There should be only one h1. also don't skip the headings level
 
 # Paragraph Element: <p> </p>
+
+# <hr/> - Horizontal break
+# <br/> - Break

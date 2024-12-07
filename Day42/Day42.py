@@ -7,3 +7,11 @@ Topic to be covered:
 - Image Elements
 - Project- Birthday Invite Website
 '''
+
+# <ul>
+    # <li></li>
+# </ul>   - Unordered list
+
+# <ol>
+    # <li></li>
+# </ol>   - Ordered list

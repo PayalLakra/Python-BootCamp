@@ -17,3 +17,4 @@ Topic to be covered:
 # </ol>   - Ordered list
 
 # <a></a>   - anchor element
+# <img src=""/>  - image element

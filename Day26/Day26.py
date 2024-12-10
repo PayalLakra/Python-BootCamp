@@ -71,3 +71,31 @@ print(result)
 weather_c = {"Monday": 12, "Tuesday": 14, "Wednesday": 15, "Thursday": 14, "Friday": 21, "Saturday": 22, "Sunday": 24}
 weather_f = {day: (temp * 9/5) + 32 for day, temp in weather_c.items()}
 print(weather_f)
+
+# Iteration over a Panda Dataframe
+student_Dict = {"student" : ["A","B","C"],"score":[56,78,44]}
+
+# for (key,value) in student_Dict.items():
+#     print(value)  #Normal Way
+
+import pandas
+
+student_data_frame = pandas.DataFrame(student_Dict)
+print(student_data_frame)
+
+for (index,row) in student_data_frame.iterrows():
+    print(row)
+
+#NATO PROJECT
+import csv
+
+with open ("Day26\\nato_phonetic_alphabet.csv", mode="r") as file:
+    csv_Reader = csv.DictReader(file)
+    nato_dict = {row['letter'].upper():row['code'] for row in csv_Reader}
+
+def generate_phonetic():
+    user_input = input("Enter a word:").upper()
+    phonetic_list = [nato_dict[letter] for letter in user_input]
+    print(phonetic_list)
+
+generate_phonetic()

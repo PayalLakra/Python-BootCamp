@@ -1,0 +1,16 @@
+/* '''
+Topics to be covered
+- Ways to add CSS 
+- 
+*/
+
+
+/* 3 Ways to add CSS */
+/* 
+1. Inline : <tag style = "css"/> ,  the inline CSS goes into the opening tag of the HTML.
+-> Used when you only want to target a single element.
+2. Internal : <style>css</style>
+-> Used when you only want to target a single web page.
+3. External : <link href="style.css"/> 
+-> Used when you only want to target multi pages.
+*/

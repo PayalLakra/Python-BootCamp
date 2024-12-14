@@ -2,6 +2,7 @@
 # Topics to be covered
 # - Ways to add CSS 
 # - CSS Selectors
+- Color Vocab Project
 '''
 
 

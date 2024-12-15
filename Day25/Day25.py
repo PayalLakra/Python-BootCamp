@@ -19,3 +19,43 @@ import pandas
 
 data = pandas.read_csv("Day25\weather_data.csv")
 print(data)
+
+# Primary Data Strucutres of Pandas- 
+# Series: Every single column is a Series, 
+# DataFrames: A DataFrame is kind of the equivalent of your whole table.
+
+data_dict = data.to_dict()
+print(data_dict)
+
+temp_list = data["TEMPERATURE"].to_list()
+print(temp_list)
+
+average = sum(temp_list) / len(temp_list)
+print(average)
+
+# OR
+print(data["TEMPERATURE"].mean())
+print(data["TEMPERATURE"].max())
+
+# Get Data in Columns
+print(data["CONDITION"])
+print(data.CONDITION)
+
+# Get Data in Rows
+print(data[data.DAY == "Monday"])
+data.TEMPERATURE == (data["TEMPERATURE"].max())
+
+monday = data[data.DAY =="Monday"]
+print(monday.CONDITION)
+
+#Converting into Fahrenheit
+monday_temp = monday.TEMPERATURE[0]
+monday_temp_in_f = monday_temp * 9/5 + 32
+print(monday_temp_in_f)
+
+# Create a DataFrame from scratch
+data_dict = {"students" : ["A","B","C"], "scores" :[10,20,30]}
+
+data = pandas.DataFrame(data_dict)
+print(data)
+data.to_csv("new_data.csv")   # To convert DF into CSV

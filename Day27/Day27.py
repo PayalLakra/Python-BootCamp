@@ -29,10 +29,13 @@ button = Button(text="Click me", command=button_clicked)                      # 
 button.pack()
 
 input = Entry(width=10)                        # Input
-input.pack()
 input.get()
+input.pack()
 
 window.mainloop()
+
+## Pack -- it basically packs each of the widgets next to each other in a vaguely logical format.
+## Place -- Place is all about precise positioning.
 
 # Advanced Python Argument - Arguments with Default values
 def my_function(a=1,b=2,c=3):

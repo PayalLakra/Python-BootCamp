@@ -8,15 +8,29 @@ Topics to be Covered:
 - Tkinter layout Managers: pack(), place(), grid()
 - Project : Mile to kilometres Converter project
 '''
+from tkinter import *
 
-import tkinter
-
-window = tkinter.Tk()                       # Window
+window = Tk()                               # Window
 window.title("My first GUI Program.")       # Title
-window.minsize(width =1000,height =300)      # Size
+window.minsize(width =1000,height =300)     # Size
 
-my_label = tkinter.Label(text = "I am a Label", font =("Arial",24,"italic"))   # Label
+my_label = Label(text = "I am a Label", font =("Arial",24,"italic"))   # Label
 my_label.pack(side="left")          # To pack the label onto the screen
+
+my_label["text"] = "New Text"
+my_label.config(text="New Text")
+
+def button_clicked():
+    print("I got clicked")
+    new_text = input.get()
+    my_label.config(text=new_text)
+
+button = Button(text="Click me", command=button_clicked)                      # Button
+button.pack()
+
+input = Entry(width=10)                        # Input
+input.pack()
+input.get()
 
 window.mainloop()
 

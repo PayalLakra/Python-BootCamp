@@ -37,6 +37,7 @@ def adding(*args):
     return sum
 
 print(adding(3,5,6,7,8,9,10))
+# *args results tuple.
 
 # **kwargs - Many keyworded arguments
 def calculate(n, **kwargs):
@@ -46,3 +47,4 @@ def calculate(n, **kwargs):
         print(n)
 
 calculate(2, add=3, multiply=5)
+# **kwargs results dictionary.

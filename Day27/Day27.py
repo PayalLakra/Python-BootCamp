@@ -8,68 +8,101 @@ Topics to be Covered:
 - Tkinter layout Managers: pack(), place(), grid()
 - Project : Mile to kilometres Converter project
 '''
+# from tkinter import *
+
+# window = Tk()                               # Window
+# window.title("My first GUI Program.")       # Title
+# window.minsize(width =1000,height =300)     # Size
+# window.config(padx=100, pady=200)
+
+# my_label = Label(text = "I am a Label", font =("Arial",24,"italic"))   # Label
+# # my_label.pack(side="left")          # To pack the label onto the screen
+
+# # my_label["text"] = "New Text"
+# my_label.config(text="New Text")
+# my_label.grid(column=0, row=0)
+# my_label.config(padx=50, pady=50)
+
+# # def button_clicked():
+# #     print("I got clicked")
+# #     new_text = input.get()
+# #     my_label.config(text=new_text)
+
+# button = Button(text="Click me")      # Button
+# button.grid(column=1, row=1)
+# # button.pack()
+
+# new_button = Button(text="New Button")
+# new_button.grid(column=2, row=0)
+
+# input = Entry(width=10)                                     # Input
+# input.get()
+# input.grid(column=3, row=2)
+# # input.pack()
+
+# window.mainloop()
+
+# ## Pack -- it basically packs each of the widgets next to each other in a vaguely logical format.
+# ## Place -- Place is all about precise positioning.
+
+# # Advanced Python Argument - Arguments with Default values
+# def my_function(a=1,b=2,c=3):
+#     print(a)
+#     print(b)
+#     print(c)
+
+# my_function()
+# my_function(b=5)     # Change only b value and rest remains same
+
+# # Unlimited Arguments
+# def adding(*args):
+#     sum = 0
+#     for n in args:
+#         sum += n
+#     return sum
+
+# print(adding(3,5,6,7,8,9,10))
+# # *args results tuple.
+
+# # **kwargs - Many keyworded arguments
+# def calculate(n, **kwargs):
+#     for key, value in kwargs.items():
+#         n += kwargs["add"]
+#         n *= kwargs["multiply"]
+#         print(n)
+
+# calculate(2, add=3, multiply=5)
+# # **kwargs results dictionary.
+
+# Project- Mile to Kilometers Converter
+
 from tkinter import *
 
-window = Tk()                               # Window
-window.title("My first GUI Program.")       # Title
-window.minsize(width =1000,height =300)     # Size
-window.config(padx=100, pady=200)
+def miles_to_km():
+    miles = float(miles_input.get())
+    km = round(miles * 1.609)
+    kilometer_Result_label.config(text=f"{km}")
 
-my_label = Label(text = "I am a Label", font =("Arial",24,"italic"))   # Label
-# my_label.pack(side="left")          # To pack the label onto the screen
+window = Tk()
+window.title("Miles to KM Converter")
+window.config(padx=20, pady=20)
 
-# my_label["text"] = "New Text"
-my_label.config(text="New Text")
-my_label.grid(column=0, row=0)
-my_label.config(padx=50, pady=50)
+miles_input = Entry(width=7)
+miles_input.grid(column=1, row=0)
 
-# def button_clicked():
-#     print("I got clicked")
-#     new_text = input.get()
-#     my_label.config(text=new_text)
+miles_label = Label(text="Miles")
+miles_label.grid(column=2, row=0)  # Corrected here
 
-button = Button(text="Click me")      # Button
-button.grid(column=1, row=1)
-# button.pack()
+is_equal_label = Label(text="is equal to")
+is_equal_label.grid(column=0, row=1)
 
-new_button = Button(text="New Button")
-new_button.grid(column=2, row=0)
+kilometer_Result_label = Label(text="0")
+kilometer_Result_label.grid(column=1, row=1)
 
-input = Entry(width=10)                                     # Input
-input.get()
-input.grid(column=3, row=2)
-# input.pack()
+kilometer_label = Label(text="KM")
+kilometer_label.grid(column=2, row=1)
+
+calculate_button = Button(text="Calculate", command=miles_to_km)
+calculate_button.grid(column=1, row=2)
 
 window.mainloop()
-
-## Pack -- it basically packs each of the widgets next to each other in a vaguely logical format.
-## Place -- Place is all about precise positioning.
-
-# Advanced Python Argument - Arguments with Default values
-def my_function(a=1,b=2,c=3):
-    print(a)
-    print(b)
-    print(c)
-
-my_function()
-my_function(b=5)     # Change only b value and rest remains same
-
-# Unlimited Arguments
-def adding(*args):
-    sum = 0
-    for n in args:
-        sum += n
-    return sum
-
-print(adding(3,5,6,7,8,9,10))
-# *args results tuple.
-
-# **kwargs - Many keyworded arguments
-def calculate(n, **kwargs):
-    for key, value in kwargs.items():
-        n += kwargs["add"]
-        n *= kwargs["multiply"]
-        print(n)
-
-calculate(2, add=3, multiply=5)
-# **kwargs results dictionary.

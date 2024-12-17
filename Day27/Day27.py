@@ -13,24 +13,32 @@ from tkinter import *
 window = Tk()                               # Window
 window.title("My first GUI Program.")       # Title
 window.minsize(width =1000,height =300)     # Size
+window.config(padx=100, pady=200)
 
 my_label = Label(text = "I am a Label", font =("Arial",24,"italic"))   # Label
-my_label.pack(side="left")          # To pack the label onto the screen
+# my_label.pack(side="left")          # To pack the label onto the screen
 
-my_label["text"] = "New Text"
+# my_label["text"] = "New Text"
 my_label.config(text="New Text")
+my_label.grid(column=0, row=0)
+my_label.config(padx=50, pady=50)
 
-def button_clicked():
-    print("I got clicked")
-    new_text = input.get()
-    my_label.config(text=new_text)
+# def button_clicked():
+#     print("I got clicked")
+#     new_text = input.get()
+#     my_label.config(text=new_text)
 
-button = Button(text="Click me", command=button_clicked)                      # Button
-button.pack()
+button = Button(text="Click me")      # Button
+button.grid(column=1, row=1)
+# button.pack()
 
-input = Entry(width=10)                        # Input
+new_button = Button(text="New Button")
+new_button.grid(column=2, row=0)
+
+input = Entry(width=10)                                     # Input
 input.get()
-input.pack()
+input.grid(column=3, row=2)
+# input.pack()
 
 window.mainloop()
 

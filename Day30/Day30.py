@@ -81,3 +81,10 @@ def count_likes(posts):
     return total_likes
 
 print(count_likes(facebook_posts))
+
+# JSON : JavaScriptObjectNotation
+# A JSON is essentially composed of a bunch of nested lists and dictionaries, and it has that key value pair data structure.
+
+# To Write: json.dump()
+# To Read: json.load()
+# To Update: json.update()

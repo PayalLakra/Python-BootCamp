@@ -3,13 +3,15 @@ Topics to be covered:
 - API
 - API Endpoint and making calls
 - Working with responses- HTTP Codes, Exceptions & JSON Data
-- Challenge
+- Challenge: Build a Kanye quotes app using Kanye Rest API
 - Understand API Parameters
 - ISS Overhead Notifier Project
 '''
 
 # API's are  all are a set of commands, functions, protocols, and objects that programmers can use to create software or interact with an external system.
 # API is an interface or rather a sort of barrier between your program and an external system.
+
+# REST API (Representational State Transfer API) is a type of API that allows computer systems to exchange information securely over the internet.
 
 # Making a request to ISS location API
 import requests

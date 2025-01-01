@@ -22,3 +22,7 @@ PARAMETERS = {
 
 response = requests.get(OWN_ENDPOINT, params=PARAMETERS)
 print(response.json())
+
+# PythonAnywhere is used to Host, run and code Python in Cloud.
+# Environment Variables are used for Convenience and Security.
+# Environment variables essentially allow us to separate out where we store our keys, our secret stuff, and various other variables away from where our code base is located.

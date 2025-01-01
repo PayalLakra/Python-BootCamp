@@ -32,3 +32,7 @@ if will_rain:
             to="8ygi"
     )
     print(message.status)
+
+# Not professional to use account_sid etc. to upload on github or anywhere as it should be personal.
+# So best way is-
+# api_key = os.environ.get("API_KEY")  [where API_KEY is created in environment variables.]

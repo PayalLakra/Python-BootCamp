@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+</head>
+<body>
+    {% for post in posts %}        <!--This represents multiple lines in Jinja template. -->
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.content }}</p>
+        <hr>
+    {% endfor %}
+</body>
+</html>

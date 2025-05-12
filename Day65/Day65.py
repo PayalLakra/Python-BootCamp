@@ -13,3 +13,16 @@ Topics to be Covered:
 # -> Alignment 
 # -> White space
 # -> Your Audience
+
+# UX Design:
+# -> Simplicity
+# -> Consistency
+# -> Reading Pattern
+# -> All Platform Design
+# -> Use F-layout
+
+# WEB DESIGN PRINCIPLES:
+# -> COLOR THEORY
+# -> TYPOGRAPHY
+# -> UI DESIGN
+# -> UX DESIGN

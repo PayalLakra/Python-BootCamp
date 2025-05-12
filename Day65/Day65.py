@@ -7,4 +7,9 @@ Topics to be Covered:
 - Web Design in Practice
 '''
 
-# Web Design
+# 5 Things to keep in mind:
+# -> Hierarchy, 
+# -> Layout
+# -> Alignment 
+# -> White space
+# -> Your Audience
